@@ -51,7 +51,7 @@ public class Main {
        System.out.println(produto.getTipo() + "-" + produto.getSaldo());
     }
 
-  
+ /* toda classe seeu tiver um metodo abstrado dela ou herdado, ent a classe em que ser abstrata, se eu nao quisr implementar um metodo abstrato então obrigatoriamente a classe se torna abstrata*/
 
 
 
