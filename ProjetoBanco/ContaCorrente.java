@@ -4,7 +4,7 @@ que foram definidos na superclasse
 assim: basta colocar a mesma assiaura delcarada na superclasse, remover a palavra abstract e dar um corpo para o método.
 
 */
-public class ContaCorrente extends Produto{
+public class ContaCorrente extends Produto implements Imprimivel {
   
   public  String getTipo(){
     return "Conta Corrente";
@@ -15,5 +15,10 @@ public class ContaCorrente extends Produto{
     saldoAtual += saldoAtual * 0.01; //pega 1% do saldo atual e soma à variavel
     setSaldo(saldoAtual); //chama o setSaldo passando o novo valor que acabamos de calcular
   }
+
+  public void imprimir(){
+    System.out.println("Rendimento da" +getTipo() +":" );
+  }
+  
 }
 

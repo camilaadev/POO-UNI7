@@ -1,11 +1,11 @@
 /* - Conta Poupança tem rendimento de 2% a.a. se a Selic for maior que 10% a.a., ou 10% da Selic caso contrário.
 Neste caso precisamos da informação da axa selic para calcular esse rendimento */
 
-public class ContaPoupanca extends Produto{
+public class ContaPoupanca extends Produto implements Imprimivel{
   //eu tenho um atributo static significa que eu tenho uma área de memória que é compartilhada com  todos os objetos da classe, neste caso da classe ContaPoupanca
   private static double porcentagemSelic; //está em todas as classes, por isso deve ser static
 
-  public  String getTipo(){
+  public String getTipo(){
     return "Conta Poupança";
   }
 
@@ -29,4 +29,9 @@ public class ContaPoupanca extends Produto{
   public static double getSelic(){
     return porcentagemSelic;
   }
+
+  public void imprimir(){
+    System.out.println("Rendimento");
+  }
+
 }

@@ -2,7 +2,7 @@ public abstract class Produto implements Imprimivel {
   //diferença de extends e implements?
   //extends usa com classe e implements com interface, ambos acarretam nas mesmas coisas se estivesse herdando de uma classe abstrata.
   //como estamos implementanmdo significa que a classe Produto tem obrigação de implementar o metodo da interface Imprimivel.
-  //mas se eu nao quisesse implementar este método imprimir então significa que eu herdei um metodo abstrato que não está sendo implementado, então a classe Produto deve ser abstrata, mas nesse caso ela ja é, então significa que agora odas as ssubclasses de Produto tem que implementar esse método imprimir.
+  //mas se eu nao quisesse implementar este método imprimir então significa que eu herdei um metodo abstrato que não está sendo implementado, então a classe Produto deve ser abstrata, mas nesse caso ela ja é, então significa que agora todas as ssubclasses de Produto tem que implementar esse método imprimir.
 
   
    private String nome;

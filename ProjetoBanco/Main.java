@@ -7,7 +7,7 @@ public class Main {
     ContaPoupanca cp1 = new ContaPoupanca();
     cp1.setConta(1);
     cp1.setSaldo(1500); //saldo inicial
-
+    cp1.imprimir();
     ContaPoupanca cp2 = new ContaPoupanca();
     cp1.setConta(2);
     cp2.setSaldo(9000); //saldo inicial
@@ -38,6 +38,8 @@ public class Main {
 
 
     //calcular rendimentos usando uma lista 
+    
+//List e uma interfa e e arrayList é uma classe que implementa eessa interface 
     List<Produto> produtos = new ArrayList<>(); 
     produtos.add(cp1);
     produtos.add(cp2);
@@ -49,10 +51,11 @@ public class Main {
     for (Produto produto : produtos){ // para cada produto na lista de Produtos
        produto.calcularRendimento(); //calcule o rendimento
        System.out.println(produto.getTipo() + "-" + produto.getSaldo());
+       
+      
     }
 
  /* toda classe seeu tiver um metodo abstrado dela ou herdado, ent a classe em que ser abstrata, se eu nao quisr implementar um metodo abstrato então obrigatoriamente a classe se torna abstrata*/
-
 
 
 
