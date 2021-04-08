@@ -1,5 +1,5 @@
 /* - Título de Capitalização tem rendimento fixo de 0.5% do saldo ao mês e sorteios mensais de 10.000 reais onde todos os clientes concorrem. */
-
+package banco;
 public class TituloDeCapitalizacao extends Produto implements Imprimivel{
    public  String getTipo(){
     return "Título de Capitalização";

@@ -1,3 +1,4 @@
+package banco;
 public abstract class Produto implements Imprimivel {
   //diferença de extends e implements?
   //extends usa com classe e implements com interface, ambos acarretam nas mesmas coisas se estivesse herdando de uma classe abstrata.
@@ -9,7 +10,8 @@ public abstract class Produto implements Imprimivel {
    private String cpf;
    private int conta; //final pois nunca muda
    private int agencia;
-
+   protected String senha; 
+//modificador protected permite o acesso direto pelas subclasses
    private double saldo;
   //classe abstrata não pode ser instanciada, mas as variaveis pode ser do tipo de uma classe abstrata
   //metodo abstrato = alguma subclasse de produto vai ter que dar a implementação deste metodo

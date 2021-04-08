@@ -1,4 +1,7 @@
 import java.util.*;
+ //tem que importar para poder usar as subclasses
+import banco.Produto; //pacotes permitem visibilidades: private and public
+import banco.produtos.*;
 
 public class Main {
   public static void main(String[] args){
@@ -41,6 +44,9 @@ public class Main {
     
 //List e uma interfa e e arrayList é uma classe que implementa eessa interface 
     List<Produto> produtos = new ArrayList<>(); 
+    Set<Produto> produtosSet = new HashSet<>(); //como implementar um set / conjunto:
+     produtosSet.add(cp1);
+     produtosSet.add(cp1); //aqui neste conjunto estou adicionando duas vezes, então esta repetido... Como o set vai saber? ele chama o metodo equals de cada objeto
     produtos.add(cp1);
     produtos.add(cp2);
     produtos.add(cc1);
