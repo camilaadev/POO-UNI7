@@ -13,5 +13,37 @@ Para que o sistema possa armazenar as informações dos brasileiros, é necessá
 //adicionar automaticamente a uma lista.
 //conjunto? Interface set? Sim, usar o exemplo do Banco.
 public class CadastroDeUsuarios{
-  
+  private String nome;
+  private String cpf;
+  //colocar data de Nascimento aqui usando class Date
+  private String endereco;
+  private int rendaMensal;
+
+  public void setNome(String nome){
+    this.nome = nome;
+  }
+  public String getNome(){
+    return this.nome;
+  }
+
+  public void setEndereco(String endereco){
+    this.endereco = endereco;
+  }
+  public String getEndereco(){
+    return this.endereco;
+  }
+
+  public void setCpf(String cpf){
+    this.cpf = cpf;
+  }
+  public String getCpf(){
+    return this.cpf;
+  }
+
+  public void setRendaMensal(int rendaMensal){
+    this.rendaMensal = rendaMensal;
+  }
+  public int getRendaMensal(){
+    return this.rendaMensal;
+  }
 }
