@@ -12,7 +12,7 @@ Para que o sistema possa armazenar as informações dos brasileiros, é necessá
 
 //adicionar automaticamente a uma lista.
 //conjunto? Interface set? Sim, usar o exemplo do Banco.
-public class CadastroDeUsuarios{
+public class Usuario{
   private String nome;
   private String cpf;
   //colocar data de Nascimento aqui usando class Date
