@@ -21,8 +21,8 @@ public class MainExcep{
 
     Declaracao ir = new DeclaracaoIR(pessoa); 
     ir.addEmprego(new Emprego("UNI7", 10.0)); cadastroDeclaracoes.registrar(ir);
-    }
   }
+
   
   System.out.println("Total de pessoas: " +cadastro.getPessoas().size());
   for(Pessoa pessoa : cadastro.getPessoas()){

@@ -25,4 +25,12 @@ public class DeclararIR {
   public void addEmprego(Emprego emprego){
      empregos.add(emprego);
   }
+
+  public double getRenda(){
+    double somatorio = 0;
+    for(Emprego emprego : empregos){
+         somatorio += emprego.getSalario();
+    }
+    return somatorio;
+  }
 }
