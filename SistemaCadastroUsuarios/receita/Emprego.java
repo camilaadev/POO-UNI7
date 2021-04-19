@@ -1,3 +1,5 @@
+package receita;
+
 public class Emprego{
   private String empresa;
   private int salarioMensal;
