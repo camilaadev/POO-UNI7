@@ -2,16 +2,17 @@ public class ContaPoupanca extends Conta{
 
   private double saldo;
 
-  public ContaPoupanca(){
-    this.nome = nome;
-    this.cpf = cpf;
-    this.numDeConta = numDeConta;
+  public ContaPoupanca (String nome, String cpf, int numDeConta){
+    super(nome, cpf, numDeConta);
+    this.saldo = saldo;
   }
-  
-  public ContaPoupanca() {
-    this.saldo = 0;
+   
+  public void setSaldo(double saldo){
+    this.saldo = saldo;
   }
-
+  public double getSaldo(){
+    return saldo;
+  }
   /*public void depositar(double dinheiro) throws DepositoNegativoException {
     if (dinheiro <= 0) {
       throw new DepositoNegativoException("Uma mensagem bonita pra quem for tratar essa exception");

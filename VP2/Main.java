@@ -1,16 +1,16 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
   public static void main(String[] args) {
     Random random = new Random();
-    ContaPoupanca poupanca = new ContaPoupanca();
-    ContaCorrente c1 = new ContaCorrente();
+  
+    //ContaCorrente c1 = new ContaCorrente();
 
     Scanner scanner = new Scanner(System.in);
 
     int opcao = 0;
     do {
-      System.out.println("Digite a opção desejada:");
+      System.out.printf("Digite a opção desejada: \n\n");
       System.out.println("5 - Abrir conta corrente");
       //System.out.println("1 - Abrir conta corrente");
       System.out.println("1 - Sacar");
@@ -23,21 +23,21 @@ public class Main {
         if (opcao == 1) {
           System.out.print("Digite o valor a ser sacado: ");
           int valor = scanner.nextInt();
-          poupanca.sacar(valor);
+         // poupanca.sacar(valor);
           System.out.println("Valor sacado com sucesso");
         }
         if (opcao == 2) {
           System.out.print("Digite o valor a ser depositado: ");
           int valor = scanner.nextInt();
-          poupanca.depositar(valor);
+       //   poupanca.depositar(valor);
           System.out.println("Valor depositado com sucesso");
         }
          if (opcao == 5) {
-          System.out.print("Para criarmos sua Conta Corrente é preciso que você insira algumas informações pessoais... Vamos começar? Tecle enter para continuar :) ");
-          int valor = scanner.nextInt();
-
+          System.out.print("Para criarmos sua Conta Corrente é preciso que você insira algumas informações pessoais... \n");
+           System.out.print("Vamos começar? Tecle enter para continuar :) \n");
+          scanner.nextLine();
           System.out.print("Digite seu nome: ");
-          int nome = scanner.nextLine();
+          String nome = scanner.nextLine();
           System.out.print("Digite seu CPF: ");
           int cpf = scanner.nextInt();
 
@@ -46,7 +46,7 @@ public class Main {
         }
       } catch (Exception e) {
         System.out.println("Ocorreu um erro." + e.getMessage());
-      }
+         }
     } while (opcao != 0);
     System.out.print("Saindo do sistema");
   }

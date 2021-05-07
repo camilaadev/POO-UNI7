@@ -28,7 +28,11 @@ public class Conta{
     return numDeConta;
   }
 
-
+public Conta( String nome, String cpf, int numDeConta){
+   this.nome = nome;
+    this.cpf = cpf;
+    this.numDeConta = numDeConta;
+}
   /*aqui se o objeto for uma instancia de pessoa, faz a conversao se tipo para a classe Pessoa
   public boolean equals(object o){
      if(o instanceof Pessoa){ 
