@@ -3,6 +3,7 @@ import java.util.*;
 public class Main {
 public static void menu(ContaCliente conta, Set<ContaCliente> contas) throws DepositoNegativoException, SaqueNegativoException, SaldoInsuficienteException {
     Scanner scanner = new Scanner(System.in);
+    int saida = 0;
 
     do {
     try{
